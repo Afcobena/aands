@@ -1,0 +1,76 @@
+@use '../../../styles/abstracts/colors' as *;
+@use '../../../styles/abstracts/fonts' as *;
+@use '../../../styles/abstracts/mixins' as *;
+
+// HERO SECTION
+	.hero {
+	margin: 0 auto 25em auto;
+
+	color: $clr-white;
+
+	h1 {
+		margin-bottom: 1.9rem;
+
+		span {
+			color: $clr-goldweb;
+		}
+
+		@include nine__hundred {
+			font-size: 4.5rem;
+		}
+
+		@include seven__hundred {
+			font-size: 3.7rem;
+		}
+
+		@include six__hundred {
+			font-size: 3rem;
+		}
+
+		@include five__hundred { 
+			font-size: 2.5rem;
+		}
+
+		@include four__hundred { 
+			font-size: 2rem;
+			font-weight: 600;
+			line-height: 2.5rem;
+		}
+	}
+
+	p {
+		margin-bottom: 3em;
+
+		font-size: $f-s-560;
+		font-weight: $f-w-300;
+		line-height: 1.3em;
+		color: $clr-light-grey;
+
+		@include seven__hundred {
+			font-size: $f-s-440;
+		}
+
+		@include four__hundred {
+			display: none;
+		}
+
+		span {
+			font-weight: $f-w-600;
+			color: $clr-goldweb;
+		}
+	}
+
+	img {
+		position: absolute;
+		top: 115px;
+		width: 100vw;
+		height: auto;
+		z-index: -1;
+	}
+
+	&__message {
+		margin-top: 5rem;
+
+		text-align: center;
+	}
+}

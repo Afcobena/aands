@@ -1,0 +1,7 @@
+@use '../../../../styles/abstracts/colors' as *;
+@use '../../../../styles/abstracts/fonts' as *;
+
+.line {
+  height: .05rem;
+  background-color: $clr-border-card;
+}

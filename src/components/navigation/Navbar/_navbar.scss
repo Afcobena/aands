@@ -1,0 +1,77 @@
+@use '../../../styles/abstracts/colors' as *;
+@use '../../../styles/abstracts/fonts' as *;
+@use '../../../styles/abstracts/mixins' as *;
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	width: 100%;
+	margin: 0 auto;
+	// background-color: $clr-background;
+	background-color: hsla(0, 0%, 10%, .7);
+	backdrop-filter: blur(16px);
+
+	padding: 0 2rem;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 2rem 0;
+		// background-color: $clr-background;
+
+		color: $clr-white;
+	}
+
+	img {
+		height: auto;
+	}
+
+	a {
+		font-size: $f-s-420;
+	}
+
+	&__brand {
+		width: 5rem;
+	}
+
+	&__links {
+		display: flex;
+	}
+
+	&__list {
+		display: flex;
+		gap: 2em;
+		align-items: center;
+
+		height: 100%;
+		padding-right: 2em;
+
+		a {
+			padding: 0.7em 2.3em;
+
+			color: $clr-goldweb;
+
+			border: 1px solid $clr-goldweb;
+			border-radius: 2px;
+			-moz-transition: all 0.2s ease-in;
+			-o-transition: all 0.2s ease-in;
+			-webkit-transition: all 0.2s ease-in;
+			transition: all 0.2s ease-in;
+
+			cursor: pointer;
+
+			&:hover {
+				color: $clr-goldweb;
+				-webkit-box-shadow: 0 0 1rem $clr-goldweb;
+				box-shadow: 0 0 1rem $clr-goldweb;
+			}
+		}
+	}
+}

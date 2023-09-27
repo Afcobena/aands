@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.2778 514.6131">
+  <g id="connectivity">
+    <circle id="top-left" cx="117.4141" cy="83.846" r="51.1453" fill="#ffd900"/>
+    <circle id="bottom-left" cx="60.5633" cy="428" r="60.5633" fill="#ffd900"/>
+    <circle id="bottom-center" cx="272.7754" cy="454.0498" r="60.5633" fill="#ffd900"/>
+    <circle id="bottom-right" cx="418.7435" cy="385.1753" r="42.8247" fill="#ffd900"/>
+    <circle id="center" cx="272.1415" cy="237.5007" r="78.8535" fill="#ffd900"/>
+    <circle id="top-right" cx="451.7778" cy="60.5" r="60.5" fill="#ffd900"/>
+    <rect id="line-top-right" x="306.2383" y="132.0767" width="123.2412" height="14.5105" transform="translate(731.3703 -10.978) rotate(136.7903)" fill="#ffd900"/>
+    <rect id="line-top-right-2" data-name="line-top-right" x="308.7113" y="316.272" width="96.7683" height="14.5105" transform="translate(380.8317 804.8002) rotate(-135)" fill="#ffd900"/>
+    <rect id="line-top-right-3" data-name="line-top-right" x="136.6509" y="144.2116" width="96.7683" height="14.5105" transform="translate(208.7713 389.4097) rotate(-135)" fill="#ffd900"/>
+    <rect id="line-bottom-left" x="72.0493" y="332.5727" width="164.7514" height="14.5105" transform="translate(499.6484 481.7821) rotate(136.7903)" fill="#ffd900"/>
+    <rect id="line-bottom-left-2" data-name="line-bottom-left" x="228.3499" y="348.2029" width="88.8511" height="14.5105" transform="translate(628.2336 82.6828) rotate(90)" fill="#ffd900"/>
+  </g>
+</svg>

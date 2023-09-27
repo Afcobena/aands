@@ -1,0 +1,44 @@
+@use '../../../styles/abstracts/colors' as *;
+@use '../../../styles/abstracts/fonts' as *;
+
+.product--card {
+	width: 20rem;
+	margin: 2em auto;
+	padding: 2em;
+	background-color: $clr-card;
+	border: 0.01rem solid $clr-border-card;
+	border-radius: 2rem;
+
+	color: $clr-white;
+
+	transition: all 2s ease-in-out;
+
+	h3 {
+		padding-bottom: 0.7em;
+
+		font-size: $f-s-480;
+		font-weight: $f-w-600;
+	}
+
+	p {
+		padding-bottom: 2em;
+
+		font-size: $f-s-400;
+		font-weight: $f-w-200;
+		letter-spacing: 0.01em;
+		line-height: 1.3em;
+	}
+
+  &__image img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+
+	&__content {
+		min-height: 13rem;
+	}
+}

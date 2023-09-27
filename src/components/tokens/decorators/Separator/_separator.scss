@@ -1,0 +1,8 @@
+@use '../../../../styles/abstracts/colors' as *;
+@use '../../../../styles/abstracts/fonts' as *;
+
+.separator {
+  height: .0625em;
+  --direction: to right;
+  background: linear-gradient(var(--direction),transparent,$clr-border-card 50%,transparent);
+}

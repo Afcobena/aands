@@ -1,0 +1,63 @@
+@use '../../../styles/abstracts/colors' as *;
+@use '../../../styles/abstracts/fonts' as *;
+@use '../../../styles/abstracts/mixins' as *;
+
+.card--large {
+  grid-column: span 2;
+
+	padding: 2rem;
+	background-color: $clr-card;
+	border: 0.01rem solid $clr-border-card;
+	border-radius: 2rem;
+
+	h3 {
+		padding-bottom: .7em;
+
+		font-size: $f-s-480;
+		font-weight: $f-w-600;
+		letter-spacing: .04rem;
+	}
+
+	p {
+		font-size: $f-s-380;
+		font-weight: $f-w-200;
+		letter-spacing: .02rem;
+	}
+
+	img {
+		width: 14rem;
+		padding: 1em;
+		height: auto;
+		background-color: $clr-background;
+		border: 0.01rem solid $clr-border-card;
+		border-radius: 2rem;
+
+		object-fit: cover;
+		aspect-ratio: auto 1/1;
+	}
+
+	@include nine__hundred {
+		grid-column: span 3;
+	}
+
+	&__text {
+		margin: 1em 0 2em 0;
+	}
+
+	&__products {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+
+		width: 100%;
+
+		@include twelve__hundred {
+			gap: 3rem;
+			justify-content: center;
+		}
+
+		@include thousand{
+			gap: 1rem;
+		}
+	}
+}

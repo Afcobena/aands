@@ -1,0 +1,62 @@
+@use '../../../styles/abstracts/colors' as *;
+@use '../../../styles/abstracts/fonts' as *;
+@use '../../../styles/abstracts/mixins' as *;
+@use '../../../styles/abstracts/variables' as *;
+
+.events--card {
+	max-width: 20rem;
+	margin: 0 2rem;
+	margin-bottom: 3rem;
+	background-color: $clr-card;
+	border: 0.01rem solid $clr-border-card;
+	border-radius: 2rem;
+
+	&__image {
+    padding: 1rem;
+		img {
+			height: auto;
+
+			border-radius: 1.3rem;
+		}
+	}
+
+	&__content {
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+		padding-right: 2rem;
+		padding-left: 2rem;
+
+		h3 {
+			font-size: $f-s-480;
+			font-weight: $f-w-600;
+			letter-spacing: 0.04rem;
+
+      margin-bottom: 1rem;
+		}
+
+		p {
+			font-size: $f-s-380;
+			font-weight: $f-w-200;
+			letter-spacing: 0.02rem;
+
+      margin-bottom: 1.3rem;
+		}
+
+    &--date {
+      display: flex;
+      justify-content: space-between;
+
+      @include three__hundred {
+        flex-direction: column;
+      }
+
+      span {
+        font-weight: 200;
+
+        @include three__hundred {
+          padding-top: .3rem;
+        }
+      }
+    }
+	}
+}

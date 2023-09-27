@@ -1,0 +1,149 @@
+@use '../../../styles/abstracts/colors' as *;
+@use '../../../styles/abstracts/fonts' as *;
+@use '../../../styles/abstracts/mixins' as *;
+
+.product--details {
+	display: flex;
+
+	max-width: 1200px;
+	margin: 3rem auto;
+	padding: 1.7rem 0;
+	background-color: $clr-card;
+	border: .01rem solid $clr-border-card;
+	border-radius: .7rem;
+	backdrop-filter: blur(1rem);
+	box-shadow: 0 1rem 1.5rem $clr-background;
+
+	img {
+		height: fit-content;
+		border-radius: .3rem;
+	}
+
+	@include thousand {
+		flex-direction: column;
+	}
+
+	&__images {
+		display: grid;
+		grid-template-columns: 20% 80%;
+		justify-items: center;
+
+		width: 100%;
+
+		@include eleven__hundred {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__carrousel {
+		min-width: 6rem;
+		max-width: 6rem;
+		height: auto;
+
+		border-radius: .3rem;
+
+		@include eleven__hundred {
+			order: 1;
+
+			display: flex;
+		}
+
+		&>div {
+			margin-bottom: 1rem;
+		}
+
+		img {
+			&:first-child {
+				border-top-left-radius: .3rem;
+				border-top-right-radius: .3rem;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+				border-bottom-left-radius: .3rem;
+				border-bottom-right-radius: .3rem;
+			}
+		}
+
+		&--item:hover img {
+			filter: brightness(0.7);
+		}
+
+		&--item img.active {
+			filter: brightness(0.7);
+		}
+	}
+
+	&__image {
+		width: 100%;
+	}
+
+	&__content {
+		width: 60%;
+		padding: 0 2rem;
+
+		color: $clr-white;
+
+		@include thousand {
+			display: flex;
+			gap: 4rem;
+
+			width: 100%;
+		}
+
+		@include seven__hundred {
+			flex-direction: column;
+		}
+
+		h3 {
+			margin-bottom: 1rem;
+
+			font-size: $f-s-700;
+			font-weight: $f-w-600;
+			line-height: 2rem;
+
+			@include four__hundred {
+				line-height: 2rem;
+			}
+		}
+
+		&--text {
+			margin-bottom: 2rem;
+
+			@include thousand {
+				width: 50%;
+			}
+
+			@include seven__hundred {
+				width: 100%;
+
+				margin:  0;
+			}
+		}
+
+		&--icon {
+			display: flex;
+			gap: 1em;
+			align-items: center;
+
+			margin-bottom: 1rem;
+		}
+
+		&--features {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+
+			@include eleven__hundred {
+				grid-template-columns: 1fr;
+			}
+
+			@include thousand {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			@include four__hundred {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+}

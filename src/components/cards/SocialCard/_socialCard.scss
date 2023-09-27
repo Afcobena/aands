@@ -1,0 +1,88 @@
+@use '../../../styles/abstracts/colors' as *;
+@use '../../../styles/abstracts/fonts' as *;
+
+.social--card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	padding: 2em;
+	background-color: $clr-card;
+	border-radius: 0.7rem;
+	border: 0.01rem solid $clr-border-card;
+
+	block-size: fit-content;
+
+	&--paragraph::before {
+		position: absolute;
+		left: -1.7rem;
+
+		content: open-quote;
+		font-size: 2.9rem;
+		font-family: serif;
+	}
+
+	&--paragraph::after {
+		content: close-quote;
+		font-size: 0rem;
+	}
+
+	&__comment {
+		position: relative;
+
+		display: flex;
+
+		img {
+			padding-right: 0.3em;
+		}
+
+		p {
+			padding-bottom: 2em;
+
+			font-family: 'Roboto', sans-serif;
+			font-size: $f-s-340;
+			font-weight: $f-w-300;
+			font-style: italic;
+			letter-spacing: 0.02rem;
+		}
+	}
+
+	&__user {
+		display: flex;
+		justify-content: space-between;
+
+		width: 100%;
+
+		p {
+			font-size: $f-s-300;
+		}
+
+		&--persona {
+			display: flex;
+			align-items: center;
+
+			img {
+				height: auto;
+				padding-right: 0.3em;
+			}
+
+			h5 {
+				font-weight: $f-w-600;
+			}
+		}
+
+		&--social {
+			display: flex;
+			justify-content: space-between;
+			align-items: baseline;
+			gap: 0.3em;
+
+			height: 100%;
+
+			&*img {
+				height: auto;
+				padding-right: 0;
+			}
+		}
+	}
+}

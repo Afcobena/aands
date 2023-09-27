@@ -1,0 +1,33 @@
+@use '../../../styles/abstracts/colors' as *;
+@use '../../../styles/abstracts/fonts' as *;
+@use '../../../styles/abstracts/mixins' as *;
+@use '../../../styles/abstracts/variables' as *;
+
+.events {
+	margin: 5rem 2rem;
+
+	color: $clr-white;
+
+  &__container {
+		max-width: 1200px;
+		margin: 0 auto;
+
+		h2 {
+			width: 100%;
+		}
+
+		&--grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			justify-items: center;
+
+			@include eleven__hundred {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			@include seven__hundred {
+				grid-template-columns: 1fr;
+			}
+		}
+  }
+}

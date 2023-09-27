@@ -1,0 +1,28 @@
+// TEAM SECTION
+@use '../../../styles/abstracts/colors' as *;
+@use '../../../styles/abstracts/fonts' as *;
+@use '../../../styles/abstracts/mixins' as *;
+@use '../../../styles/abstracts/variables' as *;
+
+.team {
+	margin: 0 2rem;
+
+	h2 {
+		margin-bottom: 2em;
+	}
+
+	&__container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 5em 0;
+
+		color: white;
+	}
+
+	&__grid {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 1.5em;
+	}
+}

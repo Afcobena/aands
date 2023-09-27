@@ -1,0 +1,43 @@
+@use '../../../styles/abstracts/colors' as *;
+@use '../../../styles/abstracts/fonts' as *;
+@use '../../../styles/abstracts/mixins' as *;
+
+.card--small {
+	display: grid;
+	align-items: center;
+	gap: 2rem;
+
+	padding: 2rem;
+	background-color: $clr-card;
+	border: 0.01rem solid $clr-border-card;
+	border-radius: 2rem;
+
+	@include nine__hundred {
+		display: none;
+	}
+
+	h3 {
+		margin-bottom: 1rem;
+
+		font-size: $f-s-480;
+		font-weight: $f-w-600;
+		letter-spacing: 0.04rem;
+	}
+
+	p {
+		font-size: $f-s-380;
+		font-weight: $f-w-200;
+		letter-spacing: 0.02rem;
+	}
+
+	&__icon {
+		width: 43%;
+		height: 50%;
+		margin: 0 auto;
+
+		img {
+			width: fit-content;
+			height: auto;
+		}
+	}
+}

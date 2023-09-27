@@ -1,0 +1,65 @@
+@use '../../../styles/abstracts/colors' as *;
+@use '../../../styles/abstracts/fonts' as *;
+@use '../../../styles/abstracts/mixins' as *;
+
+// LAST CALL TO ACTION SECTION
+.last {
+	margin: 2rem;
+
+	h2 {
+		text-align: center;
+		line-height: .3em;
+
+		@include seven__hundred {
+			width: 100%;
+			line-height: 1.5rem;
+		}
+
+		@include four__hundred {
+			line-height: 2rem;
+		}
+	}
+
+	p {
+		margin: 0 7rem;
+
+		font-size: $f-s-480;
+		font-weight: $f-w-300;
+		text-align: center;
+		line-height: 1.167em;
+		letter-spacing: 0.04rem;
+
+		@include seven__hundred {
+			width: 100%;
+			margin: 0;
+
+			font-size: 1rem;
+		}
+	}
+
+	&__container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 3em;
+		background-color: $clr-card;
+		border: 0.01rem solid $clr-border-card;
+		border-radius: 0.7rem;
+
+		color: $clr-white;
+	}
+
+	&__text {
+		padding-top: 1rem;
+
+		@include four__hundred {
+			:nth-child(2) {
+				display: none;
+			}
+		}
+	}
+
+	&__button {
+		width: fit-content;
+		margin: 4rem auto 0 auto;
+	}
+}

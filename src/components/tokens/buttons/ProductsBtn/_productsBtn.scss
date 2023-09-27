@@ -1,0 +1,28 @@
+@use '../../../../styles/abstracts/colors' as *;
+@use '../../../../styles/abstracts/fonts' as *;
+@use '../../../../styles/abstracts/mixins' as *;
+
+.products__btn {
+	display: block;
+
+	width: fit-content;
+	margin: 0 auto;
+	padding: 0.9em 2.3em;
+	background-color: $clr-goldweb;
+	border-radius: 0.2rem;
+
+	transition: all 0.2s ease-in-out;
+
+	font-size: 1rem;
+	font-weight: $f-w-500;
+	color: $clr-background;
+
+	@include seven__hundred {
+		padding: 0.7em 2em;
+	}
+
+	&:hover {
+		-webkit-box-shadow: 0 0 1rem $clr-goldweb-glow;
+		box-shadow: 0 0 1rem $clr-goldweb-glow;
+	}
+}

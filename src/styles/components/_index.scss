@@ -1,0 +1,41 @@
+@forward '../../components/layout/layout';
+
+@forward '../../components/animations/Card/card';
+
+@forward '../../components/navigation/Burger/burger';
+@forward '../../components/navigation/Footer/footer';
+@forward '../../components/navigation/Navbar/navbar';
+
+// Cards
+@forward '../../components/cards/EventsCard/eventsCard';
+@forward '../../components/cards/FeatureLargeCard/featureLargeCard';
+@forward '../../components/cards/FeatureSmallCard/featureSmallCard';
+@forward '../../components/cards/ProductCard/productCard';
+@forward '../../components/cards/ProductDetails/productDetails';
+@forward '../../components/cards/SocialCard/socialCard';
+@forward '../../components/cards/TeamCard/teamCard';
+@forward '../../components/cards/ModalCard/modalCard';
+
+// Sections
+@forward '../../components/sections/Events/events';
+@forward '../../components/sections/Features/features';
+@forward '../../components/sections/Hero/hero';
+@forward '../../components/sections/Last/last';
+@forward '../../components/sections/Partners/partners';
+@forward '../../components/sections/Social/social';
+@forward '../../components/sections/Story/story';
+@forward '../../components/sections/Team/team';
+
+// Tokens
+@forward '../../components/tokens/buttons/CallBtn/callBtn';
+@forward '../../components/tokens/buttons/ContactBtn/contactBtn';
+@forward '../../components/tokens/buttons/DetailsBtn/detailsBtn';
+@forward '../../components/tokens/buttons/PdfBtn/pdfBtn';
+@forward '../../components/tokens/buttons/ProductsBtn/productsBtn';
+@forward '../../components/tokens/decorators/Line/line';
+@forward '../../components/tokens/decorators/Separator/separator';
+@forward '../../components/tokens/modal/modal';
+
+@forward '../../components/utils/Form/form';
+@forward '../../components/utils/Map/map';
+

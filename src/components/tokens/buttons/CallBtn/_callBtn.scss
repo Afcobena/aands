@@ -1,0 +1,32 @@
+@use '../../../../styles/abstracts/colors' as *;
+@use '../../../../styles/abstracts/fonts' as *;
+
+.callbtn {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+
+	padding-bottom: 1em;
+
+	a {
+    background-color: $clr-goldweb;
+		border-radius: 0.2rem;
+
+		text-align: center;
+		color: $clr-background;
+
+		padding: 0.5rem 0;
+
+    transition: all 0.2s ease-in-out;
+
+		span {
+			font-size: $f-s-420;
+			font-weight: $f-w-500;
+		}
+
+		&:hover {
+			-webkit-box-shadow: 0 0 1rem $clr-goldweb-glow;
+			box-shadow: 0 0 1rem $clr-goldweb-glow;
+		}
+	}
+}

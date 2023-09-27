@@ -1,0 +1,51 @@
+@use '../../styles/abstracts/colors' as *;
+@use '../../styles/abstracts/fonts' as *;
+@use '../../styles/abstracts/mixins' as *;
+
+body {
+	background-color: $clr-background;
+
+	font-family: 'Inter', sans-serif;
+
+	overscroll-behavior: none;
+}
+
+h1 {
+	font-size: $f-s-2000;
+	font-weight: $f-w-500;
+	line-height: 1.1em;
+	letter-spacing: -0.02em;
+}
+
+h2 {
+	margin-bottom: 0.7em;
+
+	font-size: 3rem;
+	font-weight: $f-w-600;
+
+	@include nine__hundred {
+		font-size: 2.7rem;
+	}
+
+	@include seven__hundred {
+		width: 20rem;
+		margin-bottom: 1rem;
+
+		font-size: 2.3rem;
+		line-height: 2.7rem;
+	}
+
+	@include five__hundred {
+		font-size: 2rem;
+	}
+
+	@include four__hundred {
+		width: 100%;
+		font-size: 1.7rem;
+	}
+}
+
+.layout {
+	display: flex;
+	flex-direction: column;
+}

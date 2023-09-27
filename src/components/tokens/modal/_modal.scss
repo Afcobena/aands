@@ -1,0 +1,30 @@
+@use '../../../styles/abstracts/colors' as *;
+@use '../../../styles/abstracts/fonts' as *;
+@use '../../../styles/abstracts/mixins' as *;
+
+.modal {
+  width: fit-content;
+	max-width: 1380px;
+	margin: 0 auto;
+	padding: 2rem;
+	border: 0.01rem solid $clr-border-card;
+	border-radius: 2rem;
+	background-color: $clr-card;
+
+	&__grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		grid-gap: 1rem;
+
+		color: $clr-white;
+
+		@include nine-forty__hundred {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include thirteen__hundred {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+}

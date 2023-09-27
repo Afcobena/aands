@@ -1,0 +1,74 @@
+$breackpoints: (
+	'three__hundred': 390px,
+	'four__hundred': 461px,
+	'five__hundred': 560px,
+	'six__hundred': 640px,
+	'seven__hundred': 770px,
+	'nine__hundred': 927px,
+	'nine-forty__hundred': 947px,
+	'thousand': 1000px,
+	'eleven__hundred': 1100px,
+	'twelve__hundred': 1200px,
+	'thirteen__hundred': 1364px,
+);
+
+@mixin three__hundred{
+	@media screen and (max-width: map-get($breackpoints, 'three__hundred')) {
+		@content;
+	}
+}
+@mixin four__hundred{
+	@media screen and (max-width: map-get($breackpoints, 'four__hundred')) {
+		@content;
+	}
+}
+@mixin five__hundred {
+	@media screen and (max-width: map-get($breackpoints, 'five__hundred')) {
+		@content;
+	}
+}
+@mixin six__hundred{
+	@media screen and (max-width: map-get($breackpoints, 'six__hundred')) {
+		@content;
+	}
+}
+@mixin seven__hundred {
+	@media screen and (max-width: map-get($breackpoints, 'seven__hundred')) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media screen and (max-width: map-get($breackpoints, 'tablet')) {
+		@content;
+	}
+}
+@mixin nine__hundred {
+	@media screen and (max-width: map-get($breackpoints, 'nine__hundred')) {
+		@content;
+	}
+}
+@mixin nine-forty__hundred {
+	@media screen and (min-width: map-get($breackpoints, 'nine-forty__hundred')) {
+		@content;
+	}
+}
+@mixin thousand{
+	@media screen and (max-width: map-get($breackpoints, 'thousand')) {
+		@content;
+	}
+}
+@mixin eleven__hundred{
+	@media screen and (max-width: map-get($breackpoints, 'eleven__hundred')) {
+		@content;
+	}
+}
+@mixin twelve__hundred {
+	@media screen and (max-width: map-get($breackpoints, 'twelve__hundred')) {
+		@content;
+	}
+}
+@mixin thirteen__hundred {
+	@media screen and (min-width: map-get($breackpoints, 'thirteen__hundred')) {
+		@content;
+	}
+}

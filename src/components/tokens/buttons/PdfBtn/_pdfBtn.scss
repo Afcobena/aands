@@ -1,0 +1,15 @@
+@use '../../../../styles/abstracts/colors' as *;
+@use '../../../../styles/abstracts/fonts' as *;
+
+.pdf__btn {
+  height: fit-content;
+  padding-bottom: .1rem;
+  border-bottom: solid .1rem $clr-goldweb;
+
+  font-weight: $f-w-200;
+  color: $clr-goldweb;
+
+  cursor: pointer;
+}
+
+// #F6F6F6

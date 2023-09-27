@@ -1,0 +1,39 @@
+@use "../../../styles/abstracts/colors" as *;
+
+.burger {
+  btn {
+    position: fixed;
+    top: 2.8rem;
+    right: 2rem;
+  }
+
+  &__wrapper {
+    position: fixed;
+    top: 7.16rem;
+    right: 0;
+    z-index: 2;
+
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem 5rem;
+
+    background-color: $clr-background;
+
+    li {
+      margin-bottom: 1rem;
+    }
+
+  }
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin-top: 2rem;
+
+    a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

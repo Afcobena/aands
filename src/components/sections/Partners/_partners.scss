@@ -1,0 +1,47 @@
+@use '../../../styles/abstracts/colors' as *;
+@use '../../../styles/abstracts/fonts' as *;
+@use '../../../styles/abstracts/mixins' as *;
+
+// PARTNERS SECTION
+.partners {
+	margin: 0 2rem;
+
+	&__container {
+		max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 2em 0;
+		background-color: rgba(255, 255, 255, .9);
+		backdrop-filter: blur(1rem);
+		border-radius: 0.7rem;
+
+		a {
+			width: fit-content;
+			margin: 0 auto;
+		}
+
+		span {
+			@include four__hundred {
+				font-size: .8rem;
+			}
+		}
+
+		img {
+			width: 14rem;
+			height: auto;
+			margin-bottom: 0.2em;
+
+			@include nine__hundred {
+				width: 13rem;
+			}
+
+			@include seven__hundred {
+				width: 10rem;
+			}
+
+			@include four__hundred {
+				width: 9rem;
+			}
+		}
+	}
+}

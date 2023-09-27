@@ -1,0 +1,44 @@
+@use '../../../styles/abstracts/colors' as *;
+@use '../../../styles/abstracts/fonts' as *;
+
+.team__card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h4 {
+    font-size: $f-s-440;
+		font-weight: $f-w-500;
+		color: $clr-white;
+
+		padding-bottom: 0.4em;
+	}
+
+	p {
+		font-weight: $f-w-200;
+		letter-spacing: 0.02rem;
+	}
+
+	&--image {
+		width: 13rem;
+		height: 13rem;
+    margin-bottom: 1.5rem;
+		border-radius: 50%;
+
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: auto;
+			background-color: $clr-goldweb;
+			object-fit: cover;
+		}
+	}
+
+	&--content {
+    padding: 1rem;
+		background-color: $clr-card;
+		border: 0.01rem solid $clr-border-card;
+    border-radius: .7rem;
+	}
+}

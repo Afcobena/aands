@@ -1,0 +1,31 @@
+@use '../../../../styles/abstracts/colors' as *;
+@use '../../../../styles/abstracts/fonts' as *;
+@use '../../../../styles/abstracts/mixins' as *;
+
+.contact__btn {
+	display: block;
+
+	width: fit-content;
+	padding: 0.7em 2.3em;
+	background-color: $clr-white;
+	border-radius: 0.2rem;
+	backdrop-filter: blur(1rem);
+
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in-out;
+
+	font-weight: $f-w-500;
+	color: $clr-background;
+
+	@include seven__hundred {
+		padding: 0.7em 2em;
+	}
+
+	&:hover {
+		background-color: $clr-white;
+		-webkit-box-shadow: 0 0 1rem $clr-white;
+		box-shadow: 0 0 1rem $clr-white;
+	}
+}
