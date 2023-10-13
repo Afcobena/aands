@@ -1,0 +1,34 @@
+@use '../../../../styles/abstracts/colors' as *;
+@use '../../../../styles/abstracts/fonts' as *;
+
+.nav--btn {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+
+  display: flex;
+  gap: .44rem;
+
+  button {
+    justify-content: center;
+    place-items: center;
+
+    width: 2rem;
+    height: 2rem;
+    background-color: $clr-white;
+    border-radius: 50%;
+
+    transition: background-color .1s ease-in;
+
+    &:active {
+      background-color: hsla(0, 0%, 100%, 0.2);
+    }
+  }
+
+  img {
+    width: 14px;
+    height: auto;
+
+    margin: 0 auto;
+  }
+}

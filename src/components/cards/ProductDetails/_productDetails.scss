@@ -7,7 +7,7 @@
 
 	max-width: 1200px;
 	margin: 3rem auto;
-	padding: 1.7rem 0;
+	padding: 2.5rem 0;
 	background-color: $clr-card;
 	border: .01rem solid $clr-border-card;
 	border-radius: .7rem;
@@ -17,6 +17,9 @@
 	img {
 		height: fit-content;
 		border-radius: .3rem;
+
+		aspect-ratio: 3/2;
+		object-fit: contain;
 	}
 
 	@include thousand {
@@ -32,6 +35,11 @@
 
 		@include eleven__hundred {
 			grid-template-columns: 1fr;
+			padding: 0 2rem;
+		}
+
+		@include thousand {
+			gap: 2rem;
 		}
 	}
 
@@ -43,9 +51,15 @@
 		border-radius: .3rem;
 
 		@include eleven__hundred {
-			order: 1;
-
 			display: flex;
+
+			min-width: 100%;
+			gap: 1rem;
+			order: 1;
+		}
+
+		@include five__hundred {
+			gap: .2rem;
 		}
 
 		&>div {
@@ -75,7 +89,10 @@
 	}
 
 	&__image {
+		position: relative;
+
 		width: 100%;
+		height: fit-content;
 	}
 
 	&__content {

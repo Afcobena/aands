@@ -25,6 +25,7 @@ export default function Products() {
 						alt={eachCard.alt}
 						product={eachCard.product}
 						description={eachCard.description}
+						imageProduct={eachCard.imgProduct}
 						image={eachCard.img}
 						code={eachCard.code}
 					/>

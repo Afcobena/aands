@@ -3,9 +3,9 @@ import FeatureLargeCard from '@/components/cards/FeatureLargeCard/FeatureLargeCa
 import FeatureSmallCard from '@/components/cards/FeatureSmallCard/FeatureSmallCard';
 
 // Large Card Imports IMAGES
-import nearkeyImage from '/public/images/products/nearkey/nearkey_4.png';
+import nearkeyImage from '/public/images/products/nearkey/Nearkey_5.png';
 import switchImage from '/public/images/products/switch/switch_1.png';
-import advertisimImage from '/public/images/products/advertisim/advertisim_3.png';
+import advertisimImage from '/public/images/products/advertisim/advertisim_5.png';
 import gsrImage from '/public/images/products/gsr/gsr_5.png';
 import gsmImage from '/public/images/products/gsm/gsm_5.png';
 

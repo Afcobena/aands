@@ -2,6 +2,7 @@ export const productData = [
 	{
 		id: 1,
 		code: 'gsr',
+		imgProduct: '/images/products/gsr/GSR_5.png',
 		img: [
 			{
 				id: 101,
@@ -55,30 +56,31 @@ export const productData = [
 				src: '/icons/details/pdf.svg',
 			},
 		],
-		pdf: '/pdf/GSR-GSM.pdf'
+		pdf: '/pdf/GSR-GSM.pdf',
 	},
 	{
 		id: 2,
 		code: 'nearkey',
+		imgProduct: '/images/products/nearkey/Nearkey_5.png',
 		img: [
 			{
 				id: 201,
-				src: '/images/products/nearkey/nearkey_1.png',
+				src: '/images/products/nearkey/Nearkey_1.jpg',
 				alt: 'nearkey photo detail',
 			},
 			{
 				id: 202,
-				src: '/images/products/nearkey/nearkey_2.jpg',
+				src: '/images/products/nearkey/Nearkey_2.jpg',
 				alt: 'nearkey photo detail',
 			},
 			{
 				id: 203,
-				src: '/images/products/nearkey/nearkey_3.jpg',
+				src: '/images/products/nearkey/Nearkey_3.png',
 				alt: 'nearkey photo detail',
 			},
 			{
 				id: 204,
-				src: '/images/products/nearkey/nearkey_3.jpg',
+				src: '/images/products/nearkey/Nearkey_4.jpg',
 				alt: 'nearkey photo detail',
 			},
 		],
@@ -109,15 +111,16 @@ export const productData = [
 				src: '/icons/details/pdf.svg',
 			},
 		],
-		pdf: '/pdf/Nearkey.pdf'
+		pdf: '/pdf/Nearkey.pdf',
 	},
 	{
 		id: 3,
 		code: 'advertisim',
+		imgProduct: '/images/products/advertisim/Advertisim_5.png',
 		img: [
 			{
 				id: 301,
-				src: '/images/products/advertisim/advertisim_1.png',
+				src: '/images/products/advertisim/advertisim_1.jpg',
 				alt: 'Advertisim photo detail',
 			},
 			{
@@ -127,20 +130,20 @@ export const productData = [
 			},
 			{
 				id: 303,
-				src: '/images/products/advertisim/advertisim_3.png',
+				src: '/images/products/advertisim/advertisim_3.jpg',
 				alt: 'avertisim photo detail',
 			},
-			/* 			{
-							id: 304,
-							src: '/images/products/advertisim/advertisim_4.jpeg',
-							alt: 'avertisim photo detail',
-						}, */
+			{
+				id: 304,
+				src: '/images/products/advertisim/advertisim_4.jpg',
+				alt: 'avertisim photo detail',
+			},
 		],
 		product: 'Advertisim',
 		description:
 			'Advertisim is the first device on the market with real-time connectivity capable of displaying elevator information and advertising content.',
 		longDescription:
-			"Advertisim is the first device on the market with real-time connectivity capable of displaying elevator information and advertising content, wherever the device is located. At the same time, it provides feedback to the user about the use of the elevator, ensuring that the passenger’s experience is excellent. This model includes in a native way connectivity to controllers with connection type CAN, 485 and binary. \n This Advertisim product includes the screen and all the electronic components in one device, all mounted within a semi-embedded bracket that can be fitted behind existing lift car finishes and can easily be converted into a surface screen. The surface mount allows minimal modification to the existing finishes in the lift cabin. \n For more information see the installation manual.",
+			'Advertisim is the first device on the market with real-time connectivity capable of displaying elevator information and advertising content, wherever the device is located. At the same time, it provides feedback to the user about the use of the elevator, ensuring that the passenger’s experience is excellent. This model includes in a native way connectivity to controllers with connection type CAN, 485 and binary. \n This Advertisim product includes the screen and all the electronic components in one device, all mounted within a semi-embedded bracket that can be fitted behind existing lift car finishes and can easily be converted into a surface screen. The surface mount allows minimal modification to the existing finishes in the lift cabin. \n For more information see the installation manual.',
 		featureIcn: [
 			{
 				text: 'Visualization of floors',
@@ -183,7 +186,7 @@ export const productData = [
 				src: '/icons/details/takeoff.svg',
 			},
 		],
-		pdf: '/pdf/Advertisim.pdf'
+		pdf: '/pdf/Advertisim.pdf',
 	},
 	{
 		id: 4,

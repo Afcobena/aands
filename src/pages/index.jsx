@@ -33,7 +33,7 @@ export default function Home() {
 					{/* Partners section */}
 					<Partners className='gsap__partners' dataSpeed='1' />
 					{/* Separator */}
-					<Separator className='gsap__separator' dataSpeed='1' />
+					{/* <Separator className='gsap__separator' dataSpeed='1' /> */}
 					{/* Features section */}
 					<Features className='gsap__features' dataSpeed='1' />
 					{/* Separator */}
